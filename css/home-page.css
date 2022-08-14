@@ -1,0 +1,55 @@
+.main-container {
+    background-color: white;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 96px);
+    /* width: 100vw; */
+    gap: 30px;
+}
+
+ .circle {
+    background-image: url(../img/circles.png); 
+}
+
+
+.main-container .image{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container .rect {
+    background-image: url(../img/rect.png);
+}
+
+.main-container .diagram {
+    background-image: url(../img/diagram.png);
+}
+
+@media (max-width: 450px) {
+
+    .main-container{
+        gap:10px
+    }
+
+
+    .main-container .image{
+        height: 120px;
+        width: 120px;
+        background-size: contain;
+       
+    }
+
+
+}

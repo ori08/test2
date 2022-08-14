@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/AtAlloweRegular-lgY75.ttf);
+}
+
+@font-face {
+    font-family: heb-font;
+    src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+
+body {
+    background-color: rgb(250, 241, 241);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: open-sans;
+}
+
+html {
+    /* height: 100vh;
+    width: 100vw; */
+    padding: 0;
+    padding: 0;
+
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+canvas {
+    background-color: white;
+    /* width: 45vw; */
+}
+
+/* input {
+    direction: rtl;
+} */
+
+h1 {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    font-size: 26px;
+    color: white;
+}
+
+h2 {
+    margin-left: 18px;
+    align-self: center;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-inline-start: 15px
+}
+
+
+
+
+
+
+
+
+
+input {
+    width: 50%;
+    margin-right: 0.75rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+input:first-child {
+    margin-bottom: 20px;
+    width: 500px;
+}
+
+
+
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,256 @@
+.main-container-editor {
+    background-color: white;
+    display: flex;
+    display: none;
+    align-items: center;
+    height: calc(100vh - 96px);
+}
+
+.left-side-conatiner {
+
+    background-color: rgb(250, 250, 250);
+    height: calc(100vh - 96px);
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-side-container {
+    background-color: rgb(245, 245, 245);
+    height: calc(100vh - 96px);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.right-side-container .rtl {
+    direction: rtl;
+}
+
+
+div.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+    height: 420px;
+    overflow: auto;
+    border-bottom: 1px solid rgb(201, 201, 201);
+
+}
+
+.right-side .rtl {
+    direction: rtl;
+}
+
+.input-title {
+    margin-right: 0px;
+    height: 105px;
+    width: 50vw;
+    border-bottom: 1px solid rgb(201, 201, 201);
+
+}
+
+input.title {
+    margin-left: 0px;
+    /* padding-right: 36px; */
+    height: 105px;
+    width: 45vw;
+    font-size: 30px;
+    display: flex;
+    margin: 0 auto;
+    border: none;
+
+}
+
+
+.terms {
+
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.term {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 40vw; */
+    height: 80px;
+    margin-bottom: 12px;
+
+
+}
+
+div.term-input {
+    min-height: 80px;
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.tool-conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 45vw;
+    margin-top: 52px;
+    margin-bottom: 48px;
+}
+
+.theme-selection {
+    /* height: 40px; */
+    width: 50vw;
+    border-top: 1px solid rgb(201, 201, 201);
+    display: flex;
+    align-items: center;
+
+}
+
+.theme-selection-p {
+    padding-top: 25px;
+    /* padding-left: 42px; */
+    color: #707070;
+    /* height: 60px; */
+    width: 45vw;
+    display: flex;
+    align-self: center;
+    /* margin-left: 40px; */
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.yoram {
+    height: 74px;
+    /* max-width: 1230px; */
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.modal-img {
+    align-self: flex-end;
+    width: 190px;
+    height: 106px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal-img:hover {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.theme-modal {
+    width: 45vw;
+    margin-top: 30px;
+    margin-bottom: 38px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+
+@media (max-width: 780px) {
+    .main-container-editor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .term{
+        height: 60px;
+    }
+    div.term-input {
+       min-height: 0px;
+    }
+
+    .left-side-conatiner {
+        flex-basis:0%;
+    }
+
+    .color-btn{
+        height: 60px;
+    }
+
+    div.right-side {
+        width: 100vw;
+
+    }
+
+    .terms {
+        width: 94vw;
+        height: 270px;
+    }
+
+    div.term-input {
+        width: 94vw;
+    }
+
+    .input-title {
+        height: 40px;
+        width: 100vw;
+
+    }
+
+    input.title {
+        height: 40px;
+    }
+
+    .tool-conatiner {
+        width: 90vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div.right-side {
+        height: 300px;
+    }
+
+    .theme-selection {
+        width: 90vw;
+
+    }
+
+    .theme-selection-p {
+        width: 90vw;
+
+    }
+
+    .modal-img {
+        width: 100vw;
+        align-self: flex-start
+    }
+
+    .theme-modal {
+        width: 97vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .left-side-conatiner {
+        background-color: rgb(250, 250, 250);
+        height: calc(100vh - 96px);
+        display: flex;
+        /* flex-basis: 50%; */
+        justify-content: center;
+        align-items: center;
+    }
+
+}

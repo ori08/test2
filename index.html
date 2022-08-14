@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/user-gallery.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+    <title>Chart Generator</title>
+</head>
+
+<body onload="init()">
+
+    <div class="header-Conatiner">
+
+        <select onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+        </select>
+        <div class="main-layout">
+            <div class="yoram">
+                <div class="logo">
+                    <h1 data-trans="chart-generator">Chart Generator</h1>
+                </div>
+                <div class="nav-bar">
+                    <a class="nav-link" href="#" onclick="openHomePage()" data-trans="home">Home</a>
+                    <a class="nav-link" href="#" onclick="openGallery()" data-trans="gallery">Gallery</a>
+                    <a class="nav-link" href="#" onclick="openGraphGallery()" data-trans="my-chart">My-Chart</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- home page conatainer -->
+
+    <div class="main-container animate__animated animate__fadeInLeftBig">
+        <div class="image circle" onclick="openEditor('circle')">
+        </div>
+        <div class="image rect" onclick="openEditor('rect')">
+        </div>
+        <div class="image diagram" onclick="openEditor('diagram')">
+        </div>
+    </div>
+
+    <div class="main-container-gallery animate__animated animate__fadeInUpBig">
+
+        <div class="gallry main-layout flex-colum">
+            <div class="gallery-text">
+                <p data-trans="search-zone">Common search word <br> sport ,politician, food , coins</p>
+                <input type="text" onkeyup=" onSearch(this)" data-trans="Search" placeholder="Search..">
+            </div>
+            <div class="gallery-context">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-container-editor ">
+
+        <div class="left-side-conatiner">
+            <div class="left-side">
+                <canvas class="left-side" id="canvas" height="420" width="560"></canvas>
+            </div>
+        </div>
+        <div class="right-side-container">
+            <div class="input-title">
+                <input class="title" type="text" onkeyup=" onAddTitle(this)" data-trans="title" placeholder="Title">
+            </div>
+            <div class="right-side">
+                <div class="tool-conatiner">
+                    <button class="presn-btn toolBtn" onclick="showPrcentage()"></button>
+                    <button class="numb-btn toolBtn" onclick="showNumbers()"></button>
+                    <button class="play-btn toolBtn" onclick="playAnimation()"></button>
+                    <button class="btn-save toolBtn" onclick="saveGraph()"></button>
+                    <button class="btn-download toolBtn"><a href="#" onclick="downloadGraph(this)"
+                            download="my-imsg.jpg">
+                            <img class="btn-download toolBtn" src="img/download.png" alt=""></a></button>
+                    <button class="A-plus-btn toolBtn" onclick="fontIncrase()"></button>
+                    <button class="A-minus-btn toolBtn" onclick="fontDecrase()"></button>
+                    <button class="hide-border" onclick="addImage()"><img class="toolBtn" src="img/upload.png"
+                            alt=""><input class="add-pic-btn" type="file" id="imageInput"></button>
+
+                </div>
+                <div class="terms">
+                </div>
+
+
+
+
+
+            </div>
+            <p class="theme-selection-p" onclick="toggleModal()" data-trans="theme"> THEME SELECTION</p>
+            <div class="theme-modal animate__animated animate__backInUp">
+                <img class="modal-img" onclick="changeTheme('rect')" src="img/rect-modal.png">
+                <img class="modal-img" onclick="changeTheme('circle')" src="img/circles-modal.png">
+                <img class="modal-img" onclick="changeTheme('diagram')" src="img/diagram-modal.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- here all personal graph are rendering page from local storage -->
+
+    <div class="my-graph-container animate__animated animate__fadeInRightBig">
+
+
+    </div>
+
+    <script src="js/chart-services.js"></script>
+    <script src="js/gallery-services.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/canvas-controler.js"></script>
+    <script src="js/view-controler.js"></script>
+    <script src="js/upload-service.js"></script>
+    <script src="js/mause-listenrs.js"></script>
+    <script src="js/18-in.js"></script>
+    <script src="js/main-controler.js"></script>
+
+</body>
+
+</html>

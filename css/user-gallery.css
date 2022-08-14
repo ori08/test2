@@ -1,0 +1,20 @@
+.my-graph-container {
+    background-color: white;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 92px);
+
+}
+
+.my-graph-container img {
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+
+}

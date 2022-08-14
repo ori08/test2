@@ -1,0 +1,190 @@
+/* botoons */
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
+.color-btn {
+    background-image: url(../img/paint-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    height: 80px;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.color-btn.term0 {
+    background-color: rgb(117, 117, 117);
+}
+
+.color-btn.term1 {
+    background-color: rgb(240, 98, 146)
+}
+
+.color-btn.term2 {
+    background-color: rgb(30, 87, 188);
+}
+
+.color-btn.term3 {
+    background-color: rgb(76, 175, 80);
+
+}
+
+
+
+.toolBtn {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: none;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.btn-save.toolBtn {
+    background-image: url(../img/save.png);
+}
+
+.btn-download.toolBtn {
+    background-image: url(../img/download.png);
+}
+
+.btn-upload.toolBtn {
+    background-image: url(../img/download.png);
+}
+
+.presn-btn.toolBtn {
+    background-image: url(../img/pres.png);
+}
+
+.numb-btn.toolBtn {
+    background-image: url(../img/numb.png);
+  
+}
+
+.A-plus-btn.toolBtn {
+    background-image: url(../img/A+.png);
+}
+
+.A-minus-btn.toolBtn {
+    background-image: url(../img/A-.png);
+}
+
+.play-btn.toolBtn {
+    background-image: url(../img/play.png);
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+.btn.gray {
+    background-color: rgb(117, 117, 117);
+    border: none;
+    margin-left: 60px;
+    align-self: center;
+}
+
+.btn.pink {
+    background-color: rgb(240, 98, 146);
+    border: none;
+    align-self: center;
+}
+
+.btn.blue {
+    background-color: rgb(30, 87, 188);
+    border: none;
+    align-self: center;
+}
+
+.btn.green {
+    background-color: rgb(76, 175, 80);
+    border: none;
+    align-self: center;
+}
+
+
+.btn-close {
+    /* margin-right: 20px; */
+    height: 20px;
+
+}
+
+
+.btn-close-terms {
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+.btn-add {
+    border: none;
+    background-color: rgb(245, 245, 245);
+    height: 42px;
+    width: 144px;
+    font-size: 1rem;
+    color: #707070;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    align-self: flex-start;
+}
+
+.btn-add:hover {
+    background-color: #bebebe;
+}
+
+.exit-editor {
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background-color: #d3d2d2;
+    align-self: flex-end;
+}
+
+.add-pic-btn {
+
+    display: none;
+}
+
+
+.add-pic-btn.toolBtn {
+    background-image: url(../img/upload.png);
+}
+
+.hide-border {
+    border: none;
+}
+
+@media (max-width: 450px) {
+    .color-btn {
+        height: 60px;
+    
+    }
+
+}
+
+
+
